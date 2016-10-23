@@ -152,22 +152,21 @@ class SecondViewController: UIViewController {
     func snapTile(tileView: TileView){
         let interTiles: [TileView?] = intersectingTile(tileView: tileView)
         if interTiles.count != 0 {
-            for interTile in interTiles{
+            let interTile: TileView? = interTiles[interTiles.count - 1]
+            //for interTile in interTiles{
                 if numOfMatches(theView: interTile!) < 1 {
                     animateTile(tileOne: tileView, tileTwo: interTile, matching: true)
                     UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
-                        if self.numOfMatches(theView: interTile!) < 1 {
-                            tileView.center = interTile!.center
-                            if self.isBeer(tileView: tileView){
-                                tileView.alpha = 0
-                            } else {
-                                interTile!.alpha = 0
-                            }
+                        tileView.center = interTile!.center
+                        if self.isBeer(tileView: tileView){
+                            tileView.alpha = 0
+                        } else {
+                            interTile!.alpha = 0
                         }
                         }, completion: { (Bool) in
                     })
                 }
-            }
+            //}
         } else {
             print("no intersecting tile")
         }
