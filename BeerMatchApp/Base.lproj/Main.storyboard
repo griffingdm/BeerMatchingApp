@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MJD-cK-dw4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Optimist_Bd.ttf">
+            <string>Optimist-Bold</string>
+        </array>
+        <array key="Optimist_SBd.ttf">
+            <string>Optimist-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="ULG-hU-IEC">
+            <objects>
+                <viewController id="BHi-rQ-gMV" customClass="SecondViewController" customModule="BeerMatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LeX-lU-D3M"/>
+                        <viewControllerLayoutGuide type="bottom" id="oJe-zS-AH0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aTS-cd-kg5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-du-Kpv">
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-G0-Hk1"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-Uu-qDi">
+                                        <subviews>
+                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgK-22-oOK" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="CommunityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-O5-bCZ">
+                                                        <frame key="frameInset" minX="23" minY="79" width="155" height="37"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.5607843137254902" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="VW9-DY-ixo"/>
+                                                    <constraint firstAttribute="height" constant="200" id="sGE-IB-eAI"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pD-5b-Aya" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="MosaicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="In7-Ki-Kfi">
+                                                        <frame key="frameInset" minX="35" minY="83" width="130" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="gs5-gy-bME"/>
+                                                    <constraint firstAttribute="width" constant="200" id="oGz-hg-dWP"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-j1-7C9" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="PublicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GAu-cA-F10">
+                                                        <frame key="frameInset" minX="19" minY="88" width="163" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="LtD-IN-vsz"/>
+                                                    <constraint firstAttribute="height" constant="200" id="oz9-ry-Aj9"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-RN-kSj" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="YellowBeer" translatesAutoresizingMaskIntoConstraints="NO" id="k25-FF-H59">
+                                                        <frame key="frameInset" minX="41" minY="23" width="103" height="146"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejK-wL-ntR">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="66" id="Wlh-Cj-LSZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Optimist-SemiBold" family="Optimist" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="ejK-wL-ntR" firstAttribute="leading" secondItem="OdR-RN-kSj" secondAttribute="leading" constant="74" id="4Mf-oF-cGj"/>
+                                                    <constraint firstItem="ejK-wL-ntR" firstAttribute="centerX" secondItem="OdR-RN-kSj" secondAttribute="centerX" id="M45-eE-ckZ"/>
+                                                    <constraint firstAttribute="width" constant="200" id="fhs-FH-kq2"/>
+                                                    <constraint firstAttribute="height" constant="200" id="psG-bf-4nT"/>
+                                                    <constraint firstItem="ejK-wL-ntR" firstAttribute="top" secondItem="OdR-RN-kSj" secondAttribute="top" constant="77" id="xpb-rx-g8s"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q69-tU-vVZ" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="OrangeBeer" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-yH-4kf">
+                                                        <frame key="frameInset" minX="40" minY="24" width="103" height="146"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZq-xn-aSe">
+                                                        <fontDescription key="fontDescription" name="Optimist-SemiBold" family="Optimist" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="EZq-xn-aSe" firstAttribute="top" secondItem="q69-tU-vVZ" secondAttribute="top" constant="77" id="H11-rF-tp3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EZq-xn-aSe" secondAttribute="bottom" constant="57" id="W9u-GF-xqK"/>
+                                                    <constraint firstItem="EZq-xn-aSe" firstAttribute="leading" secondItem="q69-tU-vVZ" secondAttribute="leading" constant="74" id="euT-RS-vax"/>
+                                                    <constraint firstAttribute="width" constant="200" id="g7a-d4-O2f"/>
+                                                    <constraint firstItem="EZq-xn-aSe" firstAttribute="centerX" secondItem="q69-tU-vVZ" secondAttribute="centerX" id="jKJ-jd-sLS"/>
+                                                    <constraint firstAttribute="height" constant="200" id="zAg-1I-sq4"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-Cl-opd" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="RedBeer" translatesAutoresizingMaskIntoConstraints="NO" id="MhF-4G-63v">
+                                                        <frame key="frameInset" minX="41" minY="24" width="102" height="145"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVu-g5-sCv">
+                                                        <fontDescription key="fontDescription" name="Optimist-SemiBold" family="Optimist" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="3v4-XA-Z4J"/>
+                                                    <constraint firstItem="vVu-g5-sCv" firstAttribute="leading" secondItem="jFC-Cl-opd" secondAttribute="leading" constant="74" id="HAv-CF-tca"/>
+                                                    <constraint firstItem="vVu-g5-sCv" firstAttribute="top" secondItem="jFC-Cl-opd" secondAttribute="top" constant="77" id="IdC-dy-720"/>
+                                                    <constraint firstAttribute="width" constant="200" id="KE0-Hu-IAh"/>
+                                                    <constraint firstItem="vVu-g5-sCv" firstAttribute="centerX" secondItem="jFC-Cl-opd" secondAttribute="centerX" id="NjJ-MI-EF7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vVu-g5-sCv" secondAttribute="bottom" constant="57" id="Za8-Kn-zeZ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="QgK-22-oOK" firstAttribute="top" secondItem="TVy-Uu-qDi" secondAttribute="top" constant="68" id="0iL-tc-Ca1"/>
+                                            <constraint firstItem="2AJ-j1-7C9" firstAttribute="leading" secondItem="TVy-Uu-qDi" secondAttribute="leading" constant="20" id="1kE-aW-nEC"/>
+                                            <constraint firstItem="q69-tU-vVZ" firstAttribute="leading" secondItem="TVy-Uu-qDi" secondAttribute="leading" constant="65" id="5XS-fc-EvN"/>
+                                            <constraint firstItem="QgK-22-oOK" firstAttribute="centerX" secondItem="TVy-Uu-qDi" secondAttribute="centerX" constant="30" id="MQi-gz-tx7"/>
+                                            <constraint firstItem="OdR-RN-kSj" firstAttribute="centerX" secondItem="TVy-Uu-qDi" secondAttribute="centerX" id="Z1w-xl-fkO"/>
+                                            <constraint firstItem="q69-tU-vVZ" firstAttribute="top" secondItem="TVy-Uu-qDi" secondAttribute="top" constant="15" id="brD-qf-quj"/>
+                                            <constraint firstAttribute="trailing" secondItem="jFC-Cl-opd" secondAttribute="trailing" priority="750" id="jTR-Vs-coN"/>
+                                            <constraint firstAttribute="trailing" secondItem="9pD-5b-Aya" secondAttribute="trailing" constant="20" id="nMr-Mb-aN7"/>
+                                            <constraint firstItem="jFC-Cl-opd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="QgK-22-oOK" secondAttribute="trailing" constant="100" id="neM-np-bSD"/>
+                                            <constraint firstItem="2AJ-j1-7C9" firstAttribute="top" secondItem="q69-tU-vVZ" secondAttribute="bottom" constant="120" id="pI4-gx-1gB"/>
+                                            <constraint firstItem="OdR-RN-kSj" firstAttribute="top" secondItem="QgK-22-oOK" secondAttribute="bottom" constant="136" id="vid-q4-q5M"/>
+                                            <constraint firstItem="jFC-Cl-opd" firstAttribute="top" secondItem="TVy-Uu-qDi" secondAttribute="top" constant="15" id="wjy-wc-yz4"/>
+                                            <constraint firstItem="9pD-5b-Aya" firstAttribute="top" secondItem="jFC-Cl-opd" secondAttribute="bottom" constant="149" id="yhp-uX-yms"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Suds" translatesAutoresizingMaskIntoConstraints="NO" id="zrV-j4-jn0">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="248" id="17v-zO-DRf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5E-Ap-eoV">
+                                        <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="50" minY="20" maxX="50" maxY="20"/>
+                                        <state key="normal" title="Let's See How You Did!">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapGoButton:" destination="BHi-rQ-gMV" eventType="touchUpInside" id="npf-md-ZrE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.67450980392156867" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YGg-G0-Hk1" firstAttribute="leading" secondItem="MHf-du-Kpv" secondAttribute="leading" id="1PO-sv-3vr"/>
+                                    <constraint firstItem="YGg-G0-Hk1" firstAttribute="top" secondItem="MHf-du-Kpv" secondAttribute="top" id="34p-ef-4cb"/>
+                                    <constraint firstAttribute="trailing" secondItem="YGg-G0-Hk1" secondAttribute="trailing" id="3Co-Ha-pF5"/>
+                                    <constraint firstAttribute="bottom" secondItem="YGg-G0-Hk1" secondAttribute="bottom" id="3by-j2-Pmr"/>
+                                    <constraint firstItem="TVy-Uu-qDi" firstAttribute="centerX" secondItem="MHf-du-Kpv" secondAttribute="centerX" id="EES-h1-6AF"/>
+                                    <constraint firstItem="zrV-j4-jn0" firstAttribute="leading" secondItem="MHf-du-Kpv" secondAttribute="leading" constant="-36" id="G4N-1T-2wq"/>
+                                    <constraint firstItem="g5E-Ap-eoV" firstAttribute="centerX" secondItem="MHf-du-Kpv" secondAttribute="centerX" id="JMX-wd-jvu"/>
+                                    <constraint firstItem="TVy-Uu-qDi" firstAttribute="leading" secondItem="MHf-du-Kpv" secondAttribute="leading" constant="20" id="MHh-Tu-eqt"/>
+                                    <constraint firstItem="zrV-j4-jn0" firstAttribute="top" secondItem="MHf-du-Kpv" secondAttribute="top" constant="-85" id="U8B-gz-Xos"/>
+                                    <constraint firstAttribute="bottom" secondItem="g5E-Ap-eoV" secondAttribute="bottom" constant="100" id="cgp-1V-zFU"/>
+                                    <constraint firstItem="TVy-Uu-qDi" firstAttribute="centerY" secondItem="MHf-du-Kpv" secondAttribute="centerY" id="eeh-eN-8fo"/>
+                                    <constraint firstItem="TVy-Uu-qDi" firstAttribute="top" secondItem="MHf-du-Kpv" secondAttribute="top" constant="115" id="j5T-Io-yEk"/>
+                                    <constraint firstAttribute="trailing" secondItem="zrV-j4-jn0" secondAttribute="trailing" constant="-20" id="rcO-4P-4Nb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MHf-du-Kpv" secondAttribute="trailing" id="Tch-Pl-LnS"/>
+                            <constraint firstAttribute="bottom" secondItem="MHf-du-Kpv" secondAttribute="bottom" id="Ubf-zL-kmB"/>
+                            <constraint firstItem="MHf-du-Kpv" firstAttribute="top" secondItem="aTS-cd-kg5" secondAttribute="top" id="Xdo-yA-Him"/>
+                            <constraint firstItem="MHf-du-Kpv" firstAttribute="leading" secondItem="aTS-cd-kg5" secondAttribute="leading" id="ef7-RY-YvJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerOneView" destination="q69-tU-vVZ" id="V3j-6X-KM8"/>
+                        <outlet property="beerThreeView" destination="jFC-Cl-opd" id="l3u-Xy-RWF"/>
+                        <outlet property="beerTwoView" destination="OdR-RN-kSj" id="CO6-g0-JFp"/>
+                        <outlet property="goButton" destination="g5E-Ap-eoV" id="9l0-NR-wif"/>
+                        <outlet property="mosaicIPAView" destination="9pD-5b-Aya" id="nq4-TW-H3H"/>
+                        <outlet property="mosaicImage" destination="In7-Ki-Kfi" id="FaF-Ea-Usn"/>
+                        <outlet property="orangeBeerImage" destination="IgS-yH-4kf" id="bqU-tD-Xbu"/>
+                        <outlet property="parentTileView" destination="TVy-Uu-qDi" id="67y-hn-7kc"/>
+                        <outlet property="patternImage" destination="YGg-G0-Hk1" id="EfN-x1-YDV"/>
+                        <outlet property="publicAleImage" destination="GAu-cA-F10" id="2Wq-0O-QpL"/>
+                        <outlet property="publicAleView" destination="2AJ-j1-7C9" id="vFz-LD-2Pa"/>
+                        <outlet property="redBeerImage" destination="MhF-4G-63v" id="uEr-pT-5I5"/>
+                        <outlet property="witbierImage" destination="vf7-O5-bCZ" id="uZp-4S-MpS"/>
+                        <outlet property="witbierView" destination="QgK-22-oOK" id="PrN-1H-KOW"/>
+                        <outlet property="yellowBeerImage" destination="k25-FF-H59" id="Myj-Hl-C6c"/>
+                        <segue destination="be9-AK-QOg" kind="presentation" identifier="resultSegue" id="jc2-iL-en7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXb-Bh-pfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2062.225475841874" y="137.6953125"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="FaP-4k-O0r">
+            <objects>
+                <viewController id="MJD-cK-dw4" customClass="FirstViewController" customModule="BeerMatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DoX-xm-3tG"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ex-DD-Hqf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uz0-DC-k7g">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="ama-tT-g48"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-YT-6RV">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8T-6f-DCW">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="CuV-0V-MZX"/>
+                                            <constraint firstAttribute="height" constant="200" id="kWd-sb-wV9"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xXB-zV-TsE">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW WELL DO YOU KNOW YOUR BEERS?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh5-qI-IEo">
+                                                <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="64"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uz-52-g8f">
+                                                <string key="text">Drag &amp; drop the beers onto their correct name to be entered into our raffle for an Amazon Echo, Custom Graffiti Art, and other fun prizes!</string>
+                                                <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYf-Tr-U0k" customClass="RoundedButton" customModule="BeerMatchApp" customModuleProvider="target">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="50" minY="20" maxX="50" maxY="20"/>
+                                        <state key="normal" title="Let's Get Started!">
+                                            <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BHi-rQ-gMV" kind="presentation" id="F32-n1-AmP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ama-tT-g48" secondAttribute="bottom" id="2nL-wB-aAd"/>
+                            <constraint firstAttribute="trailing" secondItem="ama-tT-g48" secondAttribute="trailing" id="HGI-fm-WuH"/>
+                            <constraint firstItem="ygA-YT-6RV" firstAttribute="leading" secondItem="uz0-DC-k7g" secondAttribute="leading" constant="115" id="HhH-kg-r4E"/>
+                            <constraint firstItem="ama-tT-g48" firstAttribute="top" secondItem="uz0-DC-k7g" secondAttribute="top" id="HmW-wd-DJC"/>
+                            <constraint firstAttribute="trailing" secondItem="ygA-YT-6RV" secondAttribute="trailing" constant="115" id="fuz-J4-fZb"/>
+                            <constraint firstItem="ygA-YT-6RV" firstAttribute="centerY" secondItem="uz0-DC-k7g" secondAttribute="centerY" id="fw7-5X-tbl"/>
+                            <constraint firstItem="ama-tT-g48" firstAttribute="leading" secondItem="uz0-DC-k7g" secondAttribute="leading" id="sab-GW-tK0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="tYf-Tr-U0k" id="7BZ-dF-70V"/>
+                        <outlet property="parentTileView" destination="ygA-YT-6RV" id="Nnb-ru-ugK"/>
+                        <outlet property="patternImage" destination="ama-tT-g48" id="bH8-mc-MEK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIW-o9-hbs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397" y="138"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="EkK-Le-Maw">
+            <objects>
+                <viewController id="be9-AK-QOg" customClass="ResultViewController" customModule="BeerMatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nFp-ZL-L6n"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgK-wK-dao"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wRl-po-9hl">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999403953552" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-TZ-op0"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="af4-hX-CWe">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltb-nh-SIS">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="7fw-yF-YIy"/>
+                                            <constraint firstAttribute="height" constant="200" id="Z5c-hz-Xys"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-6N-I4j">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WOW! YOU REALLY KNOW YOUR BREWS." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCv-wh-lCe">
+                                                <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="64"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLx-X9-iXT">
+                                                <string key="text">Your taste buds are on-point! You guessed each beer correctly. Please show this screen to the event-person in front of you to collect a raffle ticket and a chance to win a lot of cool stuff!</string>
+                                                <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKV-ka-bez">
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="50" minY="20" maxX="50" maxY="20"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressDone:" destination="be9-AK-QOg" eventType="touchUpInside" id="fOh-TQ-hjo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63529411764705879" green="0.72156862745098038" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="af4-hX-CWe" firstAttribute="leading" secondItem="wRl-po-9hl" secondAttribute="leading" constant="115" id="08X-Nq-U7d"/>
+                            <constraint firstAttribute="trailing" secondItem="af4-hX-CWe" secondAttribute="trailing" constant="115" id="788-4I-2cT"/>
+                            <constraint firstAttribute="bottom" secondItem="6o7-TZ-op0" secondAttribute="bottom" id="Ajo-aI-5cl"/>
+                            <constraint firstItem="af4-hX-CWe" firstAttribute="centerY" secondItem="wRl-po-9hl" secondAttribute="centerY" id="PcN-Fy-2x0"/>
+                            <constraint firstItem="6o7-TZ-op0" firstAttribute="top" secondItem="wRl-po-9hl" secondAttribute="top" id="XbF-Ri-G8p"/>
+                            <constraint firstItem="6o7-TZ-op0" firstAttribute="leading" secondItem="wRl-po-9hl" secondAttribute="leading" id="hD3-im-2st"/>
+                            <constraint firstAttribute="trailing" secondItem="6o7-TZ-op0" secondAttribute="trailing" id="kXt-Eb-M0Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="EKV-ka-bez" id="kVb-wY-tAq"/>
+                        <outlet property="h1Label" destination="pCv-wh-lCe" id="R0L-IS-oII"/>
+                        <outlet property="h2Label" destination="mLx-X9-iXT" id="qhe-Fu-2OD"/>
+                        <outlet property="parentTileView" destination="af4-hX-CWe" id="MWJ-lk-9v8"/>
+                        <outlet property="patternImage" destination="6o7-TZ-op0" id="SQ3-v6-F8a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wg1-Tq-P6g" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2732" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CommunityLogo" width="155" height="37"/>
+        <image name="MosaicLogo" width="130" height="50"/>
+        <image name="OrangeBeer" width="103" height="146"/>
+        <image name="PublicLogo" width="163" height="40"/>
+        <image name="RedBeer" width="102" height="145"/>
+        <image name="Suds" width="1089" height="187"/>
+        <image name="YellowBeer" width="103" height="146"/>
+        <image name="pattern" width="1024" height="820"/>
+    </resources>
+</document>
