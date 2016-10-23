@@ -87,11 +87,11 @@ class SecondViewController: UIViewController {
         let theIntersect: TileView? = intersectingTile(tileView: theView)
         
         if gestureRecognizer.state == .began {
-            if theIntersect != nil  {
-                if matchedWith(view: theView, viewTwo: theIntersect!) {
-                    animateTile(tileOne: theView, tileTwo: theIntersect!, matching: false)
-                }
+            
+            if matchedWith(view: theView, viewTwo: theIntersect) {
+                animateTile(tileOne: theView, tileTwo: theIntersect, matching: false)
             }
+            
             showButton(hide: true)
             
         } else if gestureRecognizer.state == .changed {
@@ -100,12 +100,9 @@ class SecondViewController: UIViewController {
             gestureRecognizer.setTranslation(CGPoint.zero, in: self.view)
             
         } else if gestureRecognizer.state == .ended {
-            if theIntersect != nil{
-                if  numOfMatches(theView: theIntersect!) < 1 {
-                    animateTile(tileOne: theView, tileTwo: theIntersect!, matching: true)
-                }
-            }
+            
             snapTile(tileView: theView)
+            snapAll()
             
             switch numOfMatches() {
             case 3:
@@ -116,11 +113,23 @@ class SecondViewController: UIViewController {
         }
     }
     
+    func snapAll(){
+        for tile in tiles{
+            let intersection: TileView? = intersectingTile(tileView: tile)
+            if intersection != nil {
+                if numOfMatches(theView: tile) == 0 && numOfMatches(theView: intersection!) == 0{
+                    snapTile(tileView: tile)
+                }
+            }
+        }
+    }
+    
     //if it intersects, snap to it if something isnt already snapped
     func snapTile(tileView: TileView){
         let interTile: TileView? = intersectingTile(tileView: tileView)
         if interTile != nil {
             if numOfMatches(theView: interTile!) < 1 {
+                animateTile(tileOne: tileView, tileTwo: interTile, matching: true)
                 UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
                     if self.numOfMatches(theView: interTile!) < 1 {
                         tileView.center = interTile!.center
@@ -218,9 +227,8 @@ class SecondViewController: UIViewController {
         }
     }
     
-    func matchedWith(view: TileView, viewTwo: TileView) -> Bool {
-        
-        if view.center == viewTwo.center {
+    func matchedWith(view: TileView?, viewTwo: TileView?) -> Bool {
+        if view?.center == viewTwo?.center {
             return true
         } else {
             return false
