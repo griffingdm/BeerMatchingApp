@@ -83,17 +83,20 @@ class SecondViewController: UIViewController {
     
     @IBAction func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
         let translation = gestureRecognizer.translation(in: self.view)
+        
         let theView = gestureRecognizer.view! as! TileView
-        let theIntersect: TileView? = intersectingTile(tileView: theView)
+        let theIntersects: [TileView?] = intersectingTile(tileView: theView)
         let moveTo: CGPoint = CGPoint(x: gestureRecognizer.view!.center.x + translation.x, y: gestureRecognizer.view!.center.y + translation.y)
         //let fingerPoint: CGPoint = gestureRecognizer.location(ofTouch: 0, in: self.view)
         
         gestureRecognizer.setTranslation(CGPoint.zero, in: self.view)
         
         if gestureRecognizer.state == .began {
-            
-            if matchedWith(view: theView, viewTwo: theIntersect) {
-                animateTile(tileOne: theView, tileTwo: theIntersect, matching: false)
+            print("\(theIntersects.count)")
+            for theIntersect in theIntersects {
+                if matchedWith(view: theView, viewTwo: theIntersect) {
+                    animateTile(tileOne: theView, tileTwo: theIntersect, matching: false)
+                }
             }
             
             //snapToFinger(view: theView, point: fingerPoint)
@@ -108,6 +111,12 @@ class SecondViewController: UIViewController {
             
             snapTile(tileView: theView)
             snapAll()
+            
+            for tile in tiles {
+                if numOfMatches(theView: tile) == 0 && isBeer(tileView: tile){
+                    tile.alpha = 1
+                }
+            }
             
             switch numOfMatches() {
             case 3:
@@ -127,9 +136,9 @@ class SecondViewController: UIViewController {
     
     func snapAll(){
         for tile in tiles{
-            let intersection: TileView? = intersectingTile(tileView: tile)
-            if intersection != nil {
-                if numOfMatches(theView: tile) == 0 && numOfMatches(theView: intersection!) == 0{
+            let intersections: [TileView?] = intersectingTile(tileView: tile)
+            if intersections.count != 0 {
+                if numOfMatches(theView: tile) == 0 && numOfMatches(theView: intersections[0]!) == 0{
                     snapTile(tileView: tile)
                 }
             }
@@ -138,21 +147,23 @@ class SecondViewController: UIViewController {
     
     //if it intersects, snap to it if something isnt already snapped
     func snapTile(tileView: TileView){
-        let interTile: TileView? = intersectingTile(tileView: tileView)
-        if interTile != nil {
-            if numOfMatches(theView: interTile!) < 1 {
-                animateTile(tileOne: tileView, tileTwo: interTile, matching: true)
-                UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
-                    if self.numOfMatches(theView: interTile!) < 1 {
-                        tileView.center = interTile!.center
-                        if self.isBeer(tileView: tileView){
-                            tileView.alpha = 0
-                        } else {
-                            interTile?.alpha = 0
+        let interTiles: [TileView?] = intersectingTile(tileView: tileView)
+        if interTiles.count != 0 {
+            for interTile in interTiles{
+                if numOfMatches(theView: interTile!) < 1 {
+                    animateTile(tileOne: tileView, tileTwo: interTile, matching: true)
+                    UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
+                        if self.numOfMatches(theView: interTile!) < 1 {
+                            tileView.center = interTile!.center
+                            if self.isBeer(tileView: tileView){
+                                tileView.alpha = 0
+                            } else {
+                                interTile!.alpha = 0
+                            }
                         }
-                    }
-                    }, completion: { (Bool) in
-                })
+                        }, completion: { (Bool) in
+                    })
+                }
             }
         } else {
             print("no intersecting tile")
@@ -198,36 +209,28 @@ class SecondViewController: UIViewController {
     }
     
     //returns which view the other type of view intersects with
-    func intersectingTile(tileView: TileView) -> TileView? {
-        if isBeer(tileView: tileView){
-            if tileView.frame.intersects(self.publicAleView.frame) {
-                //print("intersects public ale view")
-                return publicAleView
-            } else if tileView.frame.intersects(self.witbierView.frame){
-                //print("intersects witbier")
-                return witbierView
-            } else if tileView.frame.intersects(self.mosaicIPAView.frame){
-                //print("intersects mosaicIPA")
-                return mosaicIPAView
-            } else {
-                print("didn't intersect anything")
-            }
-        }else {
-            if tileView.frame.intersects(self.beerOneView.frame){
-                //print("intersects beerOne")
-                return beerOneView
-            } else if tileView.frame.intersects(self.beerTwoView.frame){
-                //print("intersects beerTwo")
-                return beerTwoView
-            } else if tileView.frame.intersects(self.beerThreeView.frame){
-                //print("intersects beerThree")
-                return beerThreeView
-            } else {
-                //print("didnt intersect anything")
+    func intersectingTile(tileView: TileView) -> [TileView?] {
+        var intersections: [TileView?] = []
+        
+        
+        for tile in tiles {
+            if isBeer(tileView: tileView) && tile.tag != tileView.tag {
+                if tileView.frame.intersects(tile.frame) {
+                    if !isBeer(tileView: tile) {
+                        intersections.append(tile)
+                    }
+                }
+            } else if tile.tag != tileView.tag  {
+                if tileView.frame.intersects(tile.frame){
+                    if isBeer(tileView: tile) {
+                        intersections.append(tile)
+                    }
+                }
             }
         }
         
-        return nil
+        
+        return intersections
     }
     
     func isBeer(tileView: TileView) -> Bool{
