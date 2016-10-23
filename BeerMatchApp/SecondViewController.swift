@@ -69,6 +69,7 @@ class SecondViewController: UIViewController {
         
         //store button location, hide it
         ogButtonOrigin = goButton.center
+        goButton.alpha = 1
         showButton(hide: true)
         
         //make button rounded
@@ -138,8 +139,10 @@ class SecondViewController: UIViewController {
         for tile in tiles{
             let intersections: [TileView?] = intersectingTile(tileView: tile)
             if intersections.count != 0 {
-                if numOfMatches(theView: tile) == 0 && numOfMatches(theView: intersections[0]!) == 0{
-                    snapTile(tileView: tile)
+                for interTile in intersections{
+                    if numOfMatches(theView: tile) == 0 && numOfMatches(theView: interTile!) == 0{
+                        snapTile(tileView: tile)
+                    }
                 }
             }
         }
@@ -294,16 +297,14 @@ class SecondViewController: UIViewController {
     
     func showButton(hide: Bool){
         UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
-            if hide && self.goButton.isHidden == false {
+            if hide && self.goButton.alpha == 1 {
                 self.goButton.frame.origin.y = self.view.frame.height
-            } else if !hide && self.goButton.isHidden == true {
-                self.goButton.isHidden = false
+                self.goButton.alpha = 0
+            } else if !hide && self.goButton.alpha == 0 {
+                self.goButton.alpha = 1
                 self.goButton.center = self.ogButtonOrigin
             }
             }, completion: { (Bool) in
-                if hide {
-                    self.goButton.isHidden = true
-                }
         })
         
     }

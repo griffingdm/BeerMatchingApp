@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXb-Bh-pfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2062.225475841874" y="137.6953125"/>
+            <point key="canvasLocation" x="846" y="173"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="FaP-4k-O0r">
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIW-o9-hbs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="138"/>
+            <point key="canvasLocation" x="180" y="173"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="EkK-Le-Maw">
@@ -366,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg1-Tq-P6g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="138"/>
+            <point key="canvasLocation" x="1515" y="173"/>
         </scene>
     </scenes>
     <resources>
@@ -377,6 +377,6 @@
         <image name="RedBeer" width="102" height="145"/>
         <image name="Suds" width="1089" height="187"/>
         <image name="YellowBeer" width="103" height="146"/>
-        <image name="pattern" width="1024" height="820"/>
+        <image name="pattern" width="2048" height="1640"/>
     </resources>
 </document>
