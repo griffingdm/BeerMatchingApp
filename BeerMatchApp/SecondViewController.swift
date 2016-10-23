@@ -85,6 +85,10 @@ class SecondViewController: UIViewController {
         let translation = gestureRecognizer.translation(in: self.view)
         let theView = gestureRecognizer.view! as! TileView
         let theIntersect: TileView? = intersectingTile(tileView: theView)
+        let moveTo: CGPoint = CGPoint(x: gestureRecognizer.view!.center.x + translation.x, y: gestureRecognizer.view!.center.y + translation.y)
+        //let fingerPoint: CGPoint = gestureRecognizer.location(ofTouch: 0, in: self.view)
+        
+        gestureRecognizer.setTranslation(CGPoint.zero, in: self.view)
         
         if gestureRecognizer.state == .began {
             
@@ -92,12 +96,13 @@ class SecondViewController: UIViewController {
                 animateTile(tileOne: theView, tileTwo: theIntersect, matching: false)
             }
             
+            //snapToFinger(view: theView, point: fingerPoint)
+            
             showButton(hide: true)
             
         } else if gestureRecognizer.state == .changed {
             // note: 'view' is optional and need to be unwrapped
-            theView.center = CGPoint(x: gestureRecognizer.view!.center.x + translation.x, y: gestureRecognizer.view!.center.y + translation.y)
-            gestureRecognizer.setTranslation(CGPoint.zero, in: self.view)
+            theView.center = moveTo
             
         } else if gestureRecognizer.state == .ended {
             
@@ -110,6 +115,13 @@ class SecondViewController: UIViewController {
             default:
                 break
             }
+        }
+    }
+    
+    func snapToFinger(view: TileView, point: CGPoint){
+        UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
+            view.center = point
+        }) { (Bool) in
         }
     }
     
