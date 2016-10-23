@@ -88,7 +88,7 @@ class SecondViewController: UIViewController {
         
         if gestureRecognizer.state == .began {
             if theIntersect != nil  {
-                if numOfIntersections(theView: theIntersect!) < 2 && numOfIntersections(theView: theView) < 2 {
+                if matchedWith(view: theView, viewTwo: theIntersect!) {
                     animateTile(tileOne: theView, tileTwo: theIntersect!, matching: false)
                 }
             }
@@ -214,6 +214,15 @@ class SecondViewController: UIViewController {
         case 1...3:
             return true
         default:
+            return false
+        }
+    }
+    
+    func matchedWith(view: TileView, viewTwo: TileView) -> Bool {
+        
+        if view.center == viewTwo.center {
+            return true
+        } else {
             return false
         }
     }

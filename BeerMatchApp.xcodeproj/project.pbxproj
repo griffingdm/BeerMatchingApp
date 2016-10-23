@@ -19,12 +19,21 @@
 		6DBA31CA1DB6A83B00BA061E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBA31C81DB6A83B00BA061E /* LaunchScreen.storyboard */; };
 		6DBA31D51DB6A83B00BA061E /* BeerMatchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA31D41DB6A83B00BA061E /* BeerMatchAppTests.swift */; };
 		6DBA31E01DB6A83B00BA061E /* BeerMatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA31DF1DB6A83B00BA061E /* BeerMatchAppUITests.swift */; };
-		6DBA322C1DB6C66400BA061E /* optimist in Resources */ = {isa = PBXBuildFile; fileRef = 6DBA322B1DB6C66400BA061E /* optimist */; };
 		6DBA322E1DB6DA7900BA061E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBA322D1DB6DA7900BA061E /* Images.xcassets */; };
 		6DD3D4A21DB7C358004B3473 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A11DB7C358004B3473 /* RoundedButton.swift */; };
 		6DD3D4A41DBC2537004B3473 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A31DBC2537004B3473 /* ResultViewController.swift */; };
 		6DD3D4A61DBC5F18004B3473 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A51DBC5F18004B3473 /* TileView.swift */; };
 		6DDD5BC31DBD330F00A86099 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 6DDD5BC21DBD330F00A86099 /* Icon */; };
+		6DE63FC21DBD3B27006F29AF /* Optimist_Bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FB81DBD3B27006F29AF /* Optimist_Bd.ttf */; };
+		6DE63FC31DBD3B27006F29AF /* Optimist_BdIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FB91DBD3B27006F29AF /* Optimist_BdIt.ttf */; };
+		6DE63FC41DBD3B27006F29AF /* Optimist_It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBA1DBD3B27006F29AF /* Optimist_It.ttf */; };
+		6DE63FC51DBD3B27006F29AF /* Optimist_Lt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBB1DBD3B27006F29AF /* Optimist_Lt.ttf */; };
+		6DE63FC61DBD3B27006F29AF /* Optimist_LtIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBC1DBD3B27006F29AF /* Optimist_LtIt.ttf */; };
+		6DE63FC71DBD3B27006F29AF /* Optimist_Rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBD1DBD3B27006F29AF /* Optimist_Rg.ttf */; };
+		6DE63FC81DBD3B27006F29AF /* Optimist_SBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBE1DBD3B27006F29AF /* Optimist_SBd.ttf */; };
+		6DE63FC91DBD3B27006F29AF /* Optimist_SBdIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBF1DBD3B27006F29AF /* Optimist_SBdIt.ttf */; };
+		6DE63FCA1DBD3B27006F29AF /* Optimist_XLt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FC01DBD3B27006F29AF /* Optimist_XLt.ttf */; };
+		6DE63FCB1DBD3B27006F29AF /* Optimist_XLtIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FC11DBD3B27006F29AF /* Optimist_XLtIt.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +72,21 @@
 		6DBA31DB1DB6A83B00BA061E /* BeerMatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerMatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBA31DF1DB6A83B00BA061E /* BeerMatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerMatchAppUITests.swift; sourceTree = "<group>"; };
 		6DBA31E11DB6A83B00BA061E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DBA322B1DB6C66400BA061E /* optimist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = optimist; path = app_assets/optimist; sourceTree = "<group>"; };
 		6DBA322D1DB6DA7900BA061E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DD3D4A11DB7C358004B3473 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../RoundedButton.swift; sourceTree = "<group>"; };
 		6DD3D4A31DBC2537004B3473 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ../ResultViewController.swift; sourceTree = "<group>"; };
 		6DD3D4A51DBC5F18004B3473 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		6DDD5BC21DBD330F00A86099 /* Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icon; path = app_assets/Icon; sourceTree = "<group>"; };
+		6DE63FB81DBD3B27006F29AF /* Optimist_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_Bd.ttf; path = app_assets/optimist/Optimist_Bd.ttf; sourceTree = "<group>"; };
+		6DE63FB91DBD3B27006F29AF /* Optimist_BdIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_BdIt.ttf; path = app_assets/optimist/Optimist_BdIt.ttf; sourceTree = "<group>"; };
+		6DE63FBA1DBD3B27006F29AF /* Optimist_It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_It.ttf; path = app_assets/optimist/Optimist_It.ttf; sourceTree = "<group>"; };
+		6DE63FBB1DBD3B27006F29AF /* Optimist_Lt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_Lt.ttf; path = app_assets/optimist/Optimist_Lt.ttf; sourceTree = "<group>"; };
+		6DE63FBC1DBD3B27006F29AF /* Optimist_LtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_LtIt.ttf; path = app_assets/optimist/Optimist_LtIt.ttf; sourceTree = "<group>"; };
+		6DE63FBD1DBD3B27006F29AF /* Optimist_Rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_Rg.ttf; path = app_assets/optimist/Optimist_Rg.ttf; sourceTree = "<group>"; };
+		6DE63FBE1DBD3B27006F29AF /* Optimist_SBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_SBd.ttf; path = app_assets/optimist/Optimist_SBd.ttf; sourceTree = "<group>"; };
+		6DE63FBF1DBD3B27006F29AF /* Optimist_SBdIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_SBdIt.ttf; path = app_assets/optimist/Optimist_SBdIt.ttf; sourceTree = "<group>"; };
+		6DE63FC01DBD3B27006F29AF /* Optimist_XLt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_XLt.ttf; path = app_assets/optimist/Optimist_XLt.ttf; sourceTree = "<group>"; };
+		6DE63FC11DBD3B27006F29AF /* Optimist_XLtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_XLtIt.ttf; path = app_assets/optimist/Optimist_XLtIt.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +143,7 @@
 				6DBA31D31DB6A83B00BA061E /* BeerMatchAppTests */,
 				6DBA31DE1DB6A83B00BA061E /* BeerMatchAppUITests */,
 				6DBA31BD1DB6A83B00BA061E /* Products */,
-				6DBA322B1DB6C66400BA061E /* optimist */,
+				6DE63FCC1DBD3B2E006F29AF /* optimist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +190,23 @@
 				6DBA31E11DB6A83B00BA061E /* Info.plist */,
 			);
 			path = BeerMatchAppUITests;
+			sourceTree = "<group>";
+		};
+		6DE63FCC1DBD3B2E006F29AF /* optimist */ = {
+			isa = PBXGroup;
+			children = (
+				6DE63FB81DBD3B27006F29AF /* Optimist_Bd.ttf */,
+				6DE63FB91DBD3B27006F29AF /* Optimist_BdIt.ttf */,
+				6DE63FBA1DBD3B27006F29AF /* Optimist_It.ttf */,
+				6DE63FBB1DBD3B27006F29AF /* Optimist_Lt.ttf */,
+				6DE63FBC1DBD3B27006F29AF /* Optimist_LtIt.ttf */,
+				6DE63FBD1DBD3B27006F29AF /* Optimist_Rg.ttf */,
+				6DE63FBE1DBD3B27006F29AF /* Optimist_SBd.ttf */,
+				6DE63FBF1DBD3B27006F29AF /* Optimist_SBdIt.ttf */,
+				6DE63FC01DBD3B27006F29AF /* Optimist_XLt.ttf */,
+				6DE63FC11DBD3B27006F29AF /* Optimist_XLtIt.ttf */,
+			);
+			name = optimist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +319,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE63FC91DBD3B27006F29AF /* Optimist_SBdIt.ttf in Resources */,
 				6DDD5BC31DBD330F00A86099 /* Icon in Resources */,
 				6DBA31CA1DB6A83B00BA061E /* LaunchScreen.storyboard in Resources */,
 				6DBA322E1DB6DA7900BA061E /* Images.xcassets in Resources */,
-				6DBA322C1DB6C66400BA061E /* optimist in Resources */,
+				6DE63FC61DBD3B27006F29AF /* Optimist_LtIt.ttf in Resources */,
+				6DE63FC71DBD3B27006F29AF /* Optimist_Rg.ttf in Resources */,
+				6DE63FC51DBD3B27006F29AF /* Optimist_Lt.ttf in Resources */,
 				6DBA31C51DB6A83B00BA061E /* Main.storyboard in Resources */,
+				6DE63FC31DBD3B27006F29AF /* Optimist_BdIt.ttf in Resources */,
+				6DE63FCA1DBD3B27006F29AF /* Optimist_XLt.ttf in Resources */,
+				6DE63FC81DBD3B27006F29AF /* Optimist_SBd.ttf in Resources */,
+				6DE63FC21DBD3B27006F29AF /* Optimist_Bd.ttf in Resources */,
+				6DE63FC41DBD3B27006F29AF /* Optimist_It.ttf in Resources */,
+				6DE63FCB1DBD3B27006F29AF /* Optimist_XLtIt.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
