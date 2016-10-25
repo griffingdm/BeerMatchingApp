@@ -121,7 +121,7 @@ class SecondViewController: UIViewController {
             }
             
             //snapToFinger(view: theView, point: fingerPoint)
-            
+            fadeOthers(view: theView)
             showButton(hide: true)
             
         } else if gestureRecognizer.state == .changed {
@@ -138,6 +138,14 @@ class SecondViewController: UIViewController {
                     tile.alpha = 1
                 }
             }
+            
+            UIView.animate(withDuration: animateDuration, animations: { 
+                for tile in self.tiles {
+                    if self.numOfMatches(theView: tile) == 0 && !self.isBeer(tileView: tile){
+                        tile.alpha = 1
+                    }
+                }
+            })
             
             switch numOfMatches() {
             case 3:
@@ -210,11 +218,11 @@ class SecondViewController: UIViewController {
                     breweryTile.theImage?.alpha = 1
                     switch beerTile.tag{
                     case 1:
-                        breweryTile.backgroundColor = self.orangeBeerColor
-                    case 2:
-                        breweryTile.backgroundColor = self.yellowBeerColor
-                    case 3:
                         breweryTile.backgroundColor = self.redBeerColor
+                    case 2:
+                        breweryTile.backgroundColor = self.orangeBeerColor
+                    case 3:
+                        breweryTile.backgroundColor = self.yellowBeerColor
                     default:
                         breweryTile.backgroundColor = self.tileColor
                     }
@@ -253,6 +261,24 @@ class SecondViewController: UIViewController {
         
         
         return intersections
+    }
+    
+    func fadeOthers(view: TileView) {
+        UIView.animate(withDuration: animateDuration) { 
+            if self.isBeer(tileView: view) {
+                for tile in self.tiles {
+                    if self.isBeer(tileView: tile) && tile.tag != view.tag && self.numOfMatches(theView: tile) == 0{
+                        tile.alpha = 0.2
+                    }
+                }
+            } else {
+                for tile in self.tiles {
+                    if !self.isBeer(tileView: tile) && tile.tag != view.tag && self.numOfMatches(theView: tile) == 0 {
+                        tile.alpha = 0.2
+                    }
+                }
+            }
+        }
     }
     
     func isBeer(tileView: TileView) -> Bool{
