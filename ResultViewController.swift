@@ -44,7 +44,7 @@ class ResultViewController: UIViewController {
     func setUpResult(){
         if result {
             ResultImage.image = #imageLiteral(resourceName: "Success")
-            view.backgroundColor = #colorLiteral(red: 0.5986592306, green: 0.7552903789, blue: 0.5950692194, alpha: 1)
+            view.backgroundColor = #colorLiteral(red: 0.6, green: 0.7568627451, blue: 0.5960784314, alpha: 1)
             h1Label.text = "WOW! YOU REALLY KNOW YOUR BREWS."
             h2Label.text = "Your taste buds are on-point! You guessed each beer correctly. Please show this screen to the event-person in front of you to collect a raffle ticket and a chance to win a lot of cool stuff!"
         } else {

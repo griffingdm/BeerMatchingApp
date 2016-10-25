@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KSA-gD-t1d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KSA-gD-t1d">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -39,8 +39,8 @@
                                         <subviews>
                                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgK-22-oOK" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
                                                 <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="CommunityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-O5-bCZ">
-                                                        <frame key="frameInset" minX="23" minY="79" width="155" height="37"/>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="MosaicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-O5-bCZ">
+                                                        <frame key="frameInset" minX="23" minY="58" width="155" height="84"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                 </subviews>
@@ -52,8 +52,8 @@
                                             </view>
                                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pD-5b-Aya" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
                                                 <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="MosaicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="In7-Ki-Kfi">
-                                                        <frame key="frameInset" minX="35" minY="83" width="130" height="50"/>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="PublicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="In7-Ki-Kfi">
+                                                        <frame key="frameInset" minX="19" minY="47" width="163" height="107"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                 </subviews>
@@ -63,22 +63,9 @@
                                                     <constraint firstAttribute="width" constant="200" id="oGz-hg-dWP"/>
                                                 </constraints>
                                             </view>
-                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-j1-7C9" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
-                                                <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="PublicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GAu-cA-F10">
-                                                        <frame key="frameInset" minX="19" minY="88" width="163" height="40"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="LtD-IN-vsz"/>
-                                                    <constraint firstAttribute="height" constant="200" id="oz9-ry-Aj9"/>
-                                                </constraints>
-                                            </view>
                                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-RN-kSj" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
                                                 <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="YellowBeer" translatesAutoresizingMaskIntoConstraints="NO" id="k25-FF-H59">
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="OrangeBeer" translatesAutoresizingMaskIntoConstraints="NO" id="k25-FF-H59">
                                                         <frame key="frameInset" minX="41" minY="23" width="103" height="146"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
@@ -102,7 +89,7 @@
                                             </view>
                                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q69-tU-vVZ" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
                                                 <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="OrangeBeer" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-yH-4kf">
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="RedBeer" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-yH-4kf">
                                                         <frame key="frameInset" minX="40" minY="24" width="103" height="146"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
@@ -124,7 +111,7 @@
                                             </view>
                                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-Cl-opd" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
                                                 <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="RedBeer" translatesAutoresizingMaskIntoConstraints="NO" id="MhF-4G-63v">
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="YellowBeer" translatesAutoresizingMaskIntoConstraints="NO" id="MhF-4G-63v">
                                                         <frame key="frameInset" minX="41" minY="24" width="102" height="145"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
@@ -142,6 +129,19 @@
                                                     <constraint firstAttribute="width" constant="200" id="KE0-Hu-IAh"/>
                                                     <constraint firstItem="vVu-g5-sCv" firstAttribute="centerX" secondItem="jFC-Cl-opd" secondAttribute="centerX" id="NjJ-MI-EF7"/>
                                                     <constraint firstAttribute="bottom" secondItem="vVu-g5-sCv" secondAttribute="bottom" constant="57" id="Za8-Kn-zeZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-j1-7C9" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="CommunityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GAu-cA-F10">
+                                                        <frame key="frameInset" minX="19" minY="63" width="163" height="74"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="LtD-IN-vsz"/>
+                                                    <constraint firstAttribute="height" constant="200" id="oz9-ry-Aj9"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -261,7 +261,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uz-52-g8f">
-                                                <string key="text">Drag &amp; drop the beers onto their correct name to be entered into our raffle for an Amazon Echo, Custom Graffiti Art, and other fun prizes!</string>
+                                                <string key="text">Drag &amp; drop the beers onto their correct name to be entered into our raffle for an Amazon Echo, Lix 3D Pen, and other fun prizes!</string>
                                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -365,7 +365,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.63529411764705879" green="0.72156862745098038" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.75686274509803919" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="af4-hX-CWe" firstAttribute="leading" secondItem="wRl-po-9hl" secondAttribute="leading" constant="115" id="08X-Nq-U7d"/>
                             <constraint firstAttribute="trailing" secondItem="af4-hX-CWe" secondAttribute="trailing" constant="115" id="788-4I-2cT"/>
@@ -394,7 +394,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oOY-It-hXW" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IPo-Np-Fld">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IPo-Np-Fld">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
