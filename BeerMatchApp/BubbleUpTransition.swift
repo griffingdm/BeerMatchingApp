@@ -22,7 +22,7 @@ class BubbleUpTransition: BaseTransition {
         UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
             toViewController.view.frame.origin.y = toViewController.view.frame.height / 2
         }) { (Bool) in
-            UIView.animate(withDuration: self.animateDuration, delay: 0, usingSpringWithDamping: self.springDamp, initialSpringVelocity: self.springVel, options: [], animations: {
+            UIView.animate(withDuration: self.animateDuration, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: self.springVel, options: [], animations: {
                 toViewController.view.frame.origin.y = 0
                 }, completion: { (Bool) in
             self.finish()

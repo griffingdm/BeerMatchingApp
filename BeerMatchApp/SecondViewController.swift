@@ -36,6 +36,8 @@ class SecondViewController: UIViewController {
     let animateDuration: TimeInterval! = 0.25
     let springDamp: CGFloat! = 0.8
     let springVel: CGFloat! = 10
+    let velRange: UInt32! = 5
+    let minSpring: UInt32! = 5
     
     let tileColor: UIColor = #colorLiteral(red: 0.9593779445, green: 0.6258671284, blue: 0.2463788688, alpha: 1)
     let orangeBeerColor: UIColor = #colorLiteral(red: 0.912281692, green: 0.536565721, blue: 0.1552669704, alpha: 1)
@@ -65,6 +67,8 @@ class SecondViewController: UIViewController {
             //add a pan gesture recognizer to everything
             let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
             tile.addGestureRecognizer(gestureRecognizer)
+            
+            tile.alpha = 0
         }
         
         //store button location, hide it
@@ -75,6 +79,22 @@ class SecondViewController: UIViewController {
         //make button rounded
         goButton.layer.cornerRadius = 6
         goButton.clipsToBounds = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        for tile in tiles {
+            let ogTileFrame = tile.frame
+            let velocity = CGFloat(arc4random_uniform(velRange) + minSpring)
+            let duration: TimeInterval = 1
+            tile.alpha = 1
+            tile.frame.origin.y = view.frame.height
+            UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: velocity, options: [], animations: {
+                tile.frame = ogTileFrame
+                }, completion: { (Bool) in
+                    delay(0.1, closure: {
+                    })
+            })
+        }
     }
     
     override func didReceiveMemoryWarning() {
