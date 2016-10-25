@@ -34,6 +34,8 @@
 		6DE63FC91DBD3B27006F29AF /* Optimist_SBdIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBF1DBD3B27006F29AF /* Optimist_SBdIt.ttf */; };
 		6DE63FCA1DBD3B27006F29AF /* Optimist_XLt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FC01DBD3B27006F29AF /* Optimist_XLt.ttf */; };
 		6DE63FCB1DBD3B27006F29AF /* Optimist_XLtIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FC11DBD3B27006F29AF /* Optimist_XLtIt.ttf */; };
+		9212211C1DBFAF7000B11B4A /* LaunchTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212211B1DBFAF7000B11B4A /* LaunchTransition.swift */; };
+		9212211E1DBFAFF300B11B4A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9212211D1DBFAFF300B11B4A /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		6DE63FBF1DBD3B27006F29AF /* Optimist_SBdIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_SBdIt.ttf; path = app_assets/optimist/Optimist_SBdIt.ttf; sourceTree = "<group>"; };
 		6DE63FC01DBD3B27006F29AF /* Optimist_XLt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_XLt.ttf; path = app_assets/optimist/Optimist_XLt.ttf; sourceTree = "<group>"; };
 		6DE63FC11DBD3B27006F29AF /* Optimist_XLtIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_XLtIt.ttf; path = app_assets/optimist/Optimist_XLtIt.ttf; sourceTree = "<group>"; };
+		9212211B1DBFAF7000B11B4A /* LaunchTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchTransition.swift; sourceTree = "<group>"; };
+		9212211D1DBFAFF300B11B4A /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 				6D401DC31DBD12AB00C14CC6 /* BaseTransition.swift */,
 				6D401DC41DBD12AB00C14CC6 /* FadeTransition.swift */,
 				6D4F1DD31DBDA5BA005944FA /* BubbleUpTransition.swift */,
+				9212211B1DBFAF7000B11B4A /* LaunchTransition.swift */,
 				6D401DC81DBD13D400C14CC6 /* PatternTransition.swift */,
 			);
 			name = "Transition Files";
@@ -168,6 +173,7 @@
 				6D401DC71DBD12B100C14CC6 /* Transition Files */,
 				6D92EB271DB70645009EAF1B /* Controllers */,
 				6DBA31C81DB6A83B00BA061E /* LaunchScreen.storyboard */,
+				9212211D1DBFAFF300B11B4A /* LaunchViewController.swift */,
 				6DBA31CB1DB6A83B00BA061E /* Info.plist */,
 				6DBA322D1DB6DA7900BA061E /* Images.xcassets */,
 			);
@@ -277,7 +283,7 @@
 				TargetAttributes = {
 					6DBA31BB1DB6A83A00BA061E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 59BGYH7DCM;
+						DevelopmentTeam = MV9ZZK5JMT;
 						ProvisioningStyle = Automatic;
 					};
 					6DBA31CF1DB6A83B00BA061E = {
@@ -359,7 +365,9 @@
 				6D92EB291DB706DA009EAF1B /* SecondViewController.swift in Sources */,
 				6DD3D4A21DB7C358004B3473 /* RoundedButton.swift in Sources */,
 				6D401DC91DBD13D400C14CC6 /* PatternTransition.swift in Sources */,
+				9212211C1DBFAF7000B11B4A /* LaunchTransition.swift in Sources */,
 				6DD3D4A61DBC5F18004B3473 /* TileView.swift in Sources */,
+				9212211E1DBFAFF300B11B4A /* LaunchViewController.swift in Sources */,
 				6DD3D4A41DBC2537004B3473 /* ResultViewController.swift in Sources */,
 				6D401DC51DBD12AB00C14CC6 /* BaseTransition.swift in Sources */,
 				6D92EB261DB7063E009EAF1B /* FirstViewController.swift in Sources */,
@@ -521,7 +529,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 59BGYH7DCM;
+				DEVELOPMENT_TEAM = MV9ZZK5JMT;
 				INFOPLIST_FILE = BeerMatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GM.BeerMatchApp;
@@ -536,7 +544,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 59BGYH7DCM;
+				DEVELOPMENT_TEAM = MV9ZZK5JMT;
 				INFOPLIST_FILE = BeerMatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GM.BeerMatchApp;

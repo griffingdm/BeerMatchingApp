@@ -12,6 +12,8 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var patternImage: UIImageView!
     @IBOutlet weak var getStartedButton: RoundedButton!
     @IBOutlet weak var parentTileView: UIStackView!
+    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var logoParentView: UIView!
     
     var bubbleUpTransition: BubbleUpTransition!
 
