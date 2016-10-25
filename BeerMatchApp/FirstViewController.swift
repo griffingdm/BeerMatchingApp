@@ -13,7 +13,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var getStartedButton: RoundedButton!
     @IBOutlet weak var parentTileView: UIStackView!
     
-    var patternTransition: PatternTransition!
+    var bubbleUpTransition: BubbleUpTransition!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,6 @@ class FirstViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -42,14 +41,12 @@ class FirstViewController: UIViewController {
         destinationViewController.modalPresentationStyle = UIModalPresentationStyle.custom
         
         // Create a new instance of your fadeTransition.
-        patternTransition = PatternTransition()
+        bubbleUpTransition = BubbleUpTransition()
         
         // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
-        destinationViewController.transitioningDelegate = patternTransition
+        destinationViewController.transitioningDelegate = bubbleUpTransition
         
         // Adjust the transition duration. (seconds)
-        patternTransition.duration = 0.5
+        bubbleUpTransition.duration = 0.5
     }
-     */
-
 }

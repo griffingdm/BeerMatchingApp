@@ -36,8 +36,8 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func pressDone(_ sender: AnyObject) {
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {
-        })
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: {})
+        //navigationController?.popViewController(animated: true)
     }
     
     func setUpResult(){

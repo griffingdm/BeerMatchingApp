@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MJD-cK-dw4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oOY-It-hXW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -220,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXb-Bh-pfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="173"/>
+            <point key="canvasLocation" x="1569.7265625" y="172.65625"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="FaP-4k-O0r">
@@ -267,7 +268,10 @@
                                             <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BHi-rQ-gMV" kind="presentation" id="F32-n1-AmP"/>
+                                            <segue destination="BHi-rQ-gMV" kind="presentation" id="F32-n1-AmP">
+                                                <segue key="commit" inheritsFrom="parent" id="ggg-4g-LSh"/>
+                                                <segue key="preview" inheritsFrom="commit" id="Uui-OC-1Iu"/>
+                                            </segue>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -284,6 +288,7 @@
                             <constraint firstItem="ama-tT-g48" firstAttribute="leading" secondItem="uz0-DC-k7g" secondAttribute="leading" id="sab-GW-tK0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zw7-KI-Tos"/>
                     <connections>
                         <outlet property="getStartedButton" destination="tYf-Tr-U0k" id="7BZ-dF-70V"/>
                         <outlet property="parentTileView" destination="ygA-YT-6RV" id="Nnb-ru-ugK"/>
@@ -292,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIW-o9-hbs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="173"/>
+            <point key="canvasLocation" x="904.10156249999989" y="172.65625"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="EkK-Le-Maw">
@@ -366,7 +371,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wg1-Tq-P6g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515" y="173"/>
+            <point key="canvasLocation" x="2238.8671875" y="172.65625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4F6-G0-xGB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oOY-It-hXW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IPo-Np-Fld">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MJD-cK-dw4" kind="relationship" relationship="rootViewController" id="T6B-Gq-StZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BeA-5A-HHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.8828125" y="172.65625"/>
         </scene>
     </scenes>
     <resources>
@@ -379,4 +402,7 @@
         <image name="YellowBeer" width="103" height="146"/>
         <image name="pattern" width="2048" height="1640"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="F32-n1-AmP"/>
+    </inferredMetricsTieBreakers>
 </document>

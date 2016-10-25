@@ -10,6 +10,7 @@
 		6D401DC51DBD12AB00C14CC6 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D401DC31DBD12AB00C14CC6 /* BaseTransition.swift */; };
 		6D401DC61DBD12AB00C14CC6 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D401DC41DBD12AB00C14CC6 /* FadeTransition.swift */; };
 		6D401DC91DBD13D400C14CC6 /* PatternTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D401DC81DBD13D400C14CC6 /* PatternTransition.swift */; };
+		6D4F1DD41DBDA5BA005944FA /* BubbleUpTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4F1DD31DBDA5BA005944FA /* BubbleUpTransition.swift */; };
 		6D92EB261DB7063E009EAF1B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92EB251DB7063E009EAF1B /* FirstViewController.swift */; };
 		6D92EB291DB706DA009EAF1B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92EB281DB706DA009EAF1B /* SecondViewController.swift */; };
 		6D92EB2B1DB7151D009EAF1B /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92EB2A1DB7151D009EAF1B /* common.swift */; };
@@ -23,7 +24,6 @@
 		6DD3D4A21DB7C358004B3473 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A11DB7C358004B3473 /* RoundedButton.swift */; };
 		6DD3D4A41DBC2537004B3473 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A31DBC2537004B3473 /* ResultViewController.swift */; };
 		6DD3D4A61DBC5F18004B3473 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A51DBC5F18004B3473 /* TileView.swift */; };
-		6DDD5BC31DBD330F00A86099 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 6DDD5BC21DBD330F00A86099 /* Icon */; };
 		6DE63FC21DBD3B27006F29AF /* Optimist_Bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FB81DBD3B27006F29AF /* Optimist_Bd.ttf */; };
 		6DE63FC31DBD3B27006F29AF /* Optimist_BdIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FB91DBD3B27006F29AF /* Optimist_BdIt.ttf */; };
 		6DE63FC41DBD3B27006F29AF /* Optimist_It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE63FBA1DBD3B27006F29AF /* Optimist_It.ttf */; };
@@ -57,6 +57,7 @@
 		6D401DC31DBD12AB00C14CC6 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		6D401DC41DBD12AB00C14CC6 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		6D401DC81DBD13D400C14CC6 /* PatternTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternTransition.swift; sourceTree = "<group>"; };
+		6D4F1DD31DBDA5BA005944FA /* BubbleUpTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleUpTransition.swift; sourceTree = "<group>"; };
 		6D92EB251DB7063E009EAF1B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		6D92EB281DB706DA009EAF1B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6D92EB2A1DB7151D009EAF1B /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		6DD3D4A11DB7C358004B3473 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../RoundedButton.swift; sourceTree = "<group>"; };
 		6DD3D4A31DBC2537004B3473 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ../ResultViewController.swift; sourceTree = "<group>"; };
 		6DD3D4A51DBC5F18004B3473 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
-		6DDD5BC21DBD330F00A86099 /* Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Icon; path = app_assets/Icon; sourceTree = "<group>"; };
 		6DE63FB81DBD3B27006F29AF /* Optimist_Bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_Bd.ttf; path = app_assets/optimist/Optimist_Bd.ttf; sourceTree = "<group>"; };
 		6DE63FB91DBD3B27006F29AF /* Optimist_BdIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_BdIt.ttf; path = app_assets/optimist/Optimist_BdIt.ttf; sourceTree = "<group>"; };
 		6DE63FBA1DBD3B27006F29AF /* Optimist_It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Optimist_It.ttf; path = app_assets/optimist/Optimist_It.ttf; sourceTree = "<group>"; };
@@ -119,6 +119,7 @@
 			children = (
 				6D401DC31DBD12AB00C14CC6 /* BaseTransition.swift */,
 				6D401DC41DBD12AB00C14CC6 /* FadeTransition.swift */,
+				6D4F1DD31DBDA5BA005944FA /* BubbleUpTransition.swift */,
 				6D401DC81DBD13D400C14CC6 /* PatternTransition.swift */,
 			);
 			name = "Transition Files";
@@ -138,7 +139,6 @@
 		6DBA31B31DB6A83A00BA061E = {
 			isa = PBXGroup;
 			children = (
-				6DDD5BC21DBD330F00A86099 /* Icon */,
 				6DBA31BE1DB6A83B00BA061E /* BeerMatchApp */,
 				6DBA31D31DB6A83B00BA061E /* BeerMatchAppTests */,
 				6DBA31DE1DB6A83B00BA061E /* BeerMatchAppUITests */,
@@ -320,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE63FC91DBD3B27006F29AF /* Optimist_SBdIt.ttf in Resources */,
-				6DDD5BC31DBD330F00A86099 /* Icon in Resources */,
 				6DBA31CA1DB6A83B00BA061E /* LaunchScreen.storyboard in Resources */,
 				6DBA322E1DB6DA7900BA061E /* Images.xcassets in Resources */,
 				6DE63FC61DBD3B27006F29AF /* Optimist_LtIt.ttf in Resources */,
@@ -364,6 +363,7 @@
 				6DD3D4A41DBC2537004B3473 /* ResultViewController.swift in Sources */,
 				6D401DC51DBD12AB00C14CC6 /* BaseTransition.swift in Sources */,
 				6D92EB261DB7063E009EAF1B /* FirstViewController.swift in Sources */,
+				6D4F1DD41DBDA5BA005944FA /* BubbleUpTransition.swift in Sources */,
 				6D401DC61DBD12AB00C14CC6 /* FadeTransition.swift in Sources */,
 				6DBA31C21DB6A83B00BA061E /* ViewController.swift in Sources */,
 				6DBA31C01DB6A83B00BA061E /* AppDelegate.swift in Sources */,
@@ -520,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 59BGYH7DCM;
 				INFOPLIST_FILE = BeerMatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 59BGYH7DCM;
 				INFOPLIST_FILE = BeerMatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

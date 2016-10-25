@@ -83,14 +83,14 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func handlePan(_ gestureRecognizer: UIPanGestureRecognizer) {
-        let translation = gestureRecognizer.translation(in: self.view)
+        let translation = gestureRecognizer.translation(in: view)
         
         let theView = gestureRecognizer.view! as! TileView
         let theIntersects: [TileView?] = intersectingTile(tileView: theView)
         let moveTo: CGPoint = CGPoint(x: gestureRecognizer.view!.center.x + translation.x, y: gestureRecognizer.view!.center.y + translation.y)
         //let fingerPoint: CGPoint = gestureRecognizer.location(ofTouch: 0, in: self.view)
         
-        gestureRecognizer.setTranslation(CGPoint.zero, in: self.view)
+        gestureRecognizer.setTranslation(CGPoint.zero, in: view)
         
         if gestureRecognizer.state == .began {
             print("\(theIntersects.count)")
