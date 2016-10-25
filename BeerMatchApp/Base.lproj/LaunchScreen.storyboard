@@ -17,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-j1-7dd">
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WzX-j1-7dd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9TE-bD-4B6"/>
+                            <constraint firstItem="WzX-j1-7dd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="JWz-EW-BwG"/>
+                            <constraint firstAttribute="trailing" secondItem="WzX-j1-7dd" secondAttribute="trailing" id="QEb-ex-aym"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WzX-j1-7dd" secondAttribute="bottom" id="jwc-IU-6mx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pattern" width="2048" height="1640"/>
+    </resources>
 </document>

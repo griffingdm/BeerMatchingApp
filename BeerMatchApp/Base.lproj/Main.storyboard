@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oOY-It-hXW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KSA-gD-t1d">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -235,14 +235,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="ama-tT-g48"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="ama-tT-g48">
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-YT-6RV">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8T-6f-DCW">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Logo_White" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-eU-Cgd"/>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="CuV-0V-MZX"/>
-                                            <constraint firstAttribute="height" constant="200" id="kWd-sb-wV9"/>
+                                            <constraint firstAttribute="bottom" secondItem="ya0-eU-Cgd" secondAttribute="bottom" id="5Xk-Cb-K8N"/>
+                                            <constraint firstAttribute="width" constant="210" id="CuV-0V-MZX"/>
+                                            <constraint firstAttribute="trailing" secondItem="ya0-eU-Cgd" secondAttribute="trailing" id="hrG-PO-LOs"/>
+                                            <constraint firstAttribute="height" constant="219" id="kWd-sb-wV9"/>
+                                            <constraint firstItem="ya0-eU-Cgd" firstAttribute="leading" secondItem="R8T-6f-DCW" secondAttribute="leading" id="kqr-vy-Clw"/>
+                                            <constraint firstItem="ya0-eU-Cgd" firstAttribute="top" secondItem="R8T-6f-DCW" secondAttribute="top" id="xL3-pd-M5O"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xXB-zV-TsE">
@@ -291,6 +299,8 @@
                     <navigationItem key="navigationItem" id="zw7-KI-Tos"/>
                     <connections>
                         <outlet property="getStartedButton" destination="tYf-Tr-U0k" id="7BZ-dF-70V"/>
+                        <outlet property="logoImage" destination="ya0-eU-Cgd" id="QIe-wo-sLO"/>
+                        <outlet property="logoParentView" destination="R8T-6f-DCW" id="5jm-MZ-SDW"/>
                         <outlet property="parentTileView" destination="ygA-YT-6RV" id="Nnb-ru-ugK"/>
                         <outlet property="patternImage" destination="ama-tT-g48" id="bH8-mc-MEK"/>
                     </connections>
@@ -315,7 +325,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="af4-hX-CWe">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltb-nh-SIS">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Success" translatesAutoresizingMaskIntoConstraints="NO" id="y1Z-ie-enq">
+                                                <frame key="frameInset" minX="-7" minY="-7" width="214" height="214"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                        </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="7fw-yF-YIy"/>
                                             <constraint firstAttribute="height" constant="200" id="Z5c-hz-Xys"/>
@@ -362,6 +377,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ResultImage" destination="y1Z-ie-enq" id="TY3-ZG-bf3"/>
                         <outlet property="doneButton" destination="EKV-ka-bez" id="kVb-wY-tAq"/>
                         <outlet property="h1Label" destination="pCv-wh-lCe" id="R0L-IS-oII"/>
                         <outlet property="h2Label" destination="mLx-X9-iXT" id="qhe-Fu-2OD"/>
@@ -378,7 +394,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oOY-It-hXW" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IPo-Np-Fld">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IPo-Np-Fld">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -389,20 +405,54 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BeA-5A-HHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179.8828125" y="172.65625"/>
+            <point key="canvasLocation" x="213" y="173"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="NKn-T2-9cm">
+            <objects>
+                <viewController id="KSA-gD-t1d" customClass="LaunchViewController" customModule="BeerMatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AdW-eg-83o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z2M-WJ-eMc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WN6-zR-plk">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="IzE-Ju-lhi">
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IzE-Ju-lhi" firstAttribute="top" secondItem="WN6-zR-plk" secondAttribute="top" id="CHq-Gt-Pkt"/>
+                            <constraint firstItem="Z2M-WJ-eMc" firstAttribute="top" secondItem="IzE-Ju-lhi" secondAttribute="bottom" id="Zpa-VN-EOK"/>
+                            <constraint firstAttribute="trailing" secondItem="IzE-Ju-lhi" secondAttribute="trailing" id="mSX-Fr-ZYS"/>
+                            <constraint firstItem="IzE-Ju-lhi" firstAttribute="leading" secondItem="WN6-zR-plk" secondAttribute="leading" id="vui-9K-G2h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="oOY-It-hXW" kind="presentation" identifier="launchSegue" id="1IB-P3-aXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpB-NJ-mCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="173"/>
         </scene>
     </scenes>
     <resources>
         <image name="CommunityLogo" width="155" height="37"/>
+        <image name="Logo_White" width="210" height="219"/>
         <image name="MosaicLogo" width="130" height="50"/>
         <image name="OrangeBeer" width="103" height="146"/>
         <image name="PublicLogo" width="163" height="40"/>
         <image name="RedBeer" width="102" height="145"/>
+        <image name="Success" width="214" height="214"/>
         <image name="Suds" width="1089" height="187"/>
         <image name="YellowBeer" width="103" height="146"/>
         <image name="pattern" width="2048" height="1640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F32-n1-AmP"/>
+        <segue reference="ggg-4g-LSh"/>
     </inferredMetricsTieBreakers>
 </document>
