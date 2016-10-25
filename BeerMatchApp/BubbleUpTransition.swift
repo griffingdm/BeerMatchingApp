@@ -11,8 +11,8 @@ import UIKit
 class BubbleUpTransition: BaseTransition {
     
     //spring animation settings
-    let animateDuration: TimeInterval! = 0.25
-    let springDamp: CGFloat! = 0.8
+    let animateDuration: TimeInterval! = 0.5
+    let springDamp: CGFloat! = 0.6
     let springVel: CGFloat! = 10
     
     override func presentTransition(containerView: UIView, fromViewController: UIViewController, toViewController: UIViewController) {
