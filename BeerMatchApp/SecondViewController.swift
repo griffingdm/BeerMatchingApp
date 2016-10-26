@@ -133,15 +133,9 @@ class SecondViewController: UIViewController {
             snapTile(tileView: theView)
             snapAll()
             
-            for tile in tiles {
-                if numOfMatches(theView: tile) == 0 && isBeer(tileView: tile){
-                    tile.alpha = 1
-                }
-            }
-            
-            UIView.animate(withDuration: animateDuration, animations: { 
+            UIView.animate(withDuration: animateDuration, animations: {
                 for tile in self.tiles {
-                    if self.numOfMatches(theView: tile) == 0 && !self.isBeer(tileView: tile){
+                    if self.numOfMatches(theView: tile) == 0 {
                         tile.alpha = 1
                     }
                 }
