@@ -133,6 +133,8 @@ class SecondViewController: UIViewController {
                 for tile in self.tiles {
                     if self.numOfMatches(theView: tile) == 0 {
                         tile.alpha = 1
+                    } else if !self.isBeer(tileView: tile) {
+                        tile.alpha = 1
                     }
                 }
             })
