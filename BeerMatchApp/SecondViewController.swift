@@ -9,6 +9,7 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet weak var mamaView: UIView!
     @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var parentTileView: UIView!
     @IBOutlet weak var patternImage: UIImageView!
@@ -143,7 +144,7 @@ class SecondViewController: UIViewController {
             
             switch numOfMatches() {
             case 3:
-                showButton(hide: false)
+                finishAnimation()
             default:
                 break
             }
@@ -157,6 +158,40 @@ class SecondViewController: UIViewController {
         }
     }
     
+    func finishAnimation() {
+        let offset: CGFloat = 250
+        
+        UIView.animate(withDuration: animateDuration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
+            for tile in self.tiles {
+                if self.isBeer(tileView: tile){
+                    let match: TileView! = self.getMatch(tile: tile)!
+                    let newFrame = self.mamaView.convert(self.parentTileView.frame, from: tile.superview)
+                    
+                    tile.center.y = newFrame.height / 2
+                    match.center.y = newFrame.height / 2
+                    
+                    switch tile.tag {
+                    case 1:
+                        tile.center.x = (newFrame.width / 2) - offset
+                        match.center.x = (newFrame.width / 2) - offset
+                    case 2:
+                        tile.center.x = (newFrame.width / 2)
+                        match.center.x = (newFrame.width / 2)
+                    case 3:
+                        tile.center.x = (newFrame.width / 2) + offset
+                        match.center.x = (newFrame.width / 2) + offset
+                    default:
+                        break
+                    }
+                }
+            }
+            
+            }, completion: { (Bool) in
+                self.showButton(hide: false)
+        })
+
+    }
+    
     func snapAll(){
         for tile in tiles{
             let intersections: [TileView?] = intersectingTile(tileView: tile)
@@ -168,6 +203,16 @@ class SecondViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func getMatch(tile: TileView) -> TileView? {
+        for thing in tiles {
+            if tile.center == thing.center && tile.tag != thing.tag {
+                return thing
+                break
+            }
+        }
+        return nil
     }
     
     //if it intersects, snap to it if something isnt already snapped

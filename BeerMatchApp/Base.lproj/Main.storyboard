@@ -205,6 +205,7 @@
                         <outlet property="beerThreeView" destination="jFC-Cl-opd" id="l3u-Xy-RWF"/>
                         <outlet property="beerTwoView" destination="OdR-RN-kSj" id="CO6-g0-JFp"/>
                         <outlet property="goButton" destination="g5E-Ap-eoV" id="9l0-NR-wif"/>
+                        <outlet property="mamaView" destination="MHf-du-Kpv" id="E1m-ag-ZtO"/>
                         <outlet property="mosaicIPAView" destination="9pD-5b-Aya" id="nq4-TW-H3H"/>
                         <outlet property="mosaicImage" destination="In7-Ki-Kfi" id="FaF-Ea-Usn"/>
                         <outlet property="orangeBeerImage" destination="IgS-yH-4kf" id="bqU-tD-Xbu"/>
