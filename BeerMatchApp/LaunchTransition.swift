@@ -9,36 +9,41 @@
 import UIKit
 
 class LaunchTransition: BaseTransition {
+    var newLogo: UIImageView!
+    
+    //spring animation settings
+    let springDamp: CGFloat! = 0.8
+    let springVel: CGFloat! = 10
     
     
     override func presentTransition(containerView: UIView, fromViewController: UIViewController, toViewController: UIViewController) {
-//        let fromView = fromViewController as! LaunchViewController
-//        let toView = toViewController.childViewControllers[0] as! FirstViewController
-//        
-//        let newLogo: UIImageView! = UIImageView()
-//        let imageFrame = containerView.convert(fromView.logoImage.frame, from: fromView.logoImage.superview)
-//        let toImageFrame = containerView.convert(toView.logoImage.frame, to: fromView.logoImage.superview)
-//        
-//        newLogo.frame = imageFrame
-//        newLogo.image = fromView.logoImage.image
-//        newLogo.contentMode = fromView.logoImage.contentMode
-//        
-//        containerView.addSubview(newLogo)
-//        
-//        fromView.logoImage.alpha = 0
-//        toView.logoImage.alpha = 0
+        let fromController = fromViewController as! LaunchViewController
+        let toController = toViewController as! FirstViewController
+        toController.view.layoutIfNeeded()
+        let fromImage = fromController.logoImage!
+        let toImage = toController.logoImage!
+        
+        newLogo = UIImageView()
+        newLogo.frame = containerView.convert(fromImage.frame, from: fromImage.superview)
+        newLogo.image = fromImage.image
+        newLogo.contentMode = fromImage.contentMode
+        
+        containerView.addSubview(newLogo)
+        fromController.logoImage.isHidden = true
+        toController.logoImage.isHidden = true
         toViewController.view.alpha = 0
         
-        UIView.animate(withDuration: duration, animations: {
-//            newLogo.frame = toImageFrame
-//            newLogo.contentMode = toView.logoImage.contentMode
+        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
+            self.newLogo.frame = containerView.convert(toImage.frame, from: toImage.superview)
+            }) { (Bool) in
+        }
+        
+        UIView.animate(withDuration: duration/2, delay: duration/2, options: [], animations: {
             toViewController.view.alpha = 1
-        }) { (finished: Bool) -> Void in
-//            toView.logoImage.alpha = 1
-//            newLogo.removeFromSuperview()
-            
-            self.finish()
-            
+            }) { (Bool) in
+                toController.logoImage.isHidden = false
+                self.newLogo.removeFromSuperview()
+                self.finish()
         }
     }
     

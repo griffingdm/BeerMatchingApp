@@ -389,24 +389,6 @@
             </objects>
             <point key="canvasLocation" x="2238.8671875" y="172.65625"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4F6-G0-xGB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oOY-It-hXW" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IPo-Np-Fld">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="MJD-cK-dw4" kind="relationship" relationship="rootViewController" id="T6B-Gq-StZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BeA-5A-HHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="213" y="173"/>
-        </scene>
         <!--Launch View Controller-->
         <scene sceneID="NKn-T2-9cm">
             <objects>
@@ -422,7 +404,7 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="IzE-Ju-lhi">
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" fixedFrame="YES" image="Logo_White" translatesAutoresizingMaskIntoConstraints="NO" id="HHe-yL-DbS">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Logo_White" translatesAutoresizingMaskIntoConstraints="NO" id="HHe-yL-DbS">
                                 <frame key="frameInset" minX="407" minY="275" width="210" height="219"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -437,12 +419,12 @@
                     </view>
                     <connections>
                         <outlet property="logoImage" destination="HHe-yL-DbS" id="wZW-Tq-RTB"/>
-                        <segue destination="oOY-It-hXW" kind="presentation" identifier="launchSegue" id="1IB-P3-aXR"/>
+                        <segue destination="MJD-cK-dw4" kind="presentation" identifier="launchSegue" id="GVx-bF-gdg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpB-NJ-mCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-519" y="173"/>
+            <point key="canvasLocation" x="159" y="173"/>
         </scene>
     </scenes>
     <resources>
