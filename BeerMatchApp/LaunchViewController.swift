@@ -29,7 +29,9 @@ class LaunchViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         print("performing segue")
-        performSegue(withIdentifier: "launchSegue", sender: nil)
+        delay(0.5) {
+            self.performSegue(withIdentifier: "launchSegue", sender: nil)
+        }
     }
     
     // MARK: - Navigation

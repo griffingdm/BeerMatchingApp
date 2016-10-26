@@ -13,7 +13,7 @@ class LaunchTransition: BaseTransition {
     
     //spring animation settings
     let springDamp: CGFloat! = 0.8
-    let springVel: CGFloat! = 10
+    let springVel: CGFloat! = 6
     
     
     override func presentTransition(containerView: UIView, fromViewController: UIViewController, toViewController: UIViewController) {
@@ -29,21 +29,21 @@ class LaunchTransition: BaseTransition {
         newLogo.contentMode = fromImage.contentMode
         
         containerView.addSubview(newLogo)
-        fromController.logoImage.isHidden = true
-        toController.logoImage.isHidden = true
+        fromController.logoImage.alpha = 0
+        toController.logoImage.alpha = 0
         toViewController.view.alpha = 0
         
         UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: springDamp, initialSpringVelocity: springVel, options: [], animations: {
             self.newLogo.frame = containerView.convert(toImage.frame, from: toImage.superview)
             }) { (Bool) in
+                toController.logoImage.alpha = 1
+                self.newLogo.removeFromSuperview()
+                self.finish()
         }
         
         UIView.animate(withDuration: duration/2, delay: duration/2, options: [], animations: {
             toViewController.view.alpha = 1
             }) { (Bool) in
-                toController.logoImage.isHidden = false
-                self.newLogo.removeFromSuperview()
-                self.finish()
         }
     }
     
