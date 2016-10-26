@@ -37,6 +37,19 @@
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-Uu-qDi">
                                         <subviews>
+                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-j1-7C9" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="CommunityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GAu-cA-F10">
+                                                        <frame key="frameInset" minX="19" minY="63" width="163" height="74"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="LtD-IN-vsz"/>
+                                                    <constraint firstAttribute="height" constant="200" id="oz9-ry-Aj9"/>
+                                                </constraints>
+                                            </view>
                                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgK-22-oOK" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="MosaicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-O5-bCZ">
@@ -129,19 +142,6 @@
                                                     <constraint firstAttribute="width" constant="200" id="KE0-Hu-IAh"/>
                                                     <constraint firstItem="vVu-g5-sCv" firstAttribute="centerX" secondItem="jFC-Cl-opd" secondAttribute="centerX" id="NjJ-MI-EF7"/>
                                                     <constraint firstAttribute="bottom" secondItem="vVu-g5-sCv" secondAttribute="bottom" constant="57" id="Za8-Kn-zeZ"/>
-                                                </constraints>
-                                            </view>
-                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-j1-7C9" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
-                                                <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="CommunityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GAu-cA-F10">
-                                                        <frame key="frameInset" minX="19" minY="63" width="163" height="74"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.94117647059999998" green="0.56078431370000004" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="LtD-IN-vsz"/>
-                                                    <constraint firstAttribute="height" constant="200" id="oz9-ry-Aj9"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
