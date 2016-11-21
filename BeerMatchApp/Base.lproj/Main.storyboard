@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KSA-gD-t1d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KSA-gD-t1d">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,23 +27,29 @@
                         <viewControllerLayoutGuide type="bottom" id="oJe-zS-AH0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aTS-cd-kg5">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHf-du-Kpv">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-G0-Hk1"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-G0-Hk1">
+                                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Suds" translatesAutoresizingMaskIntoConstraints="NO" id="zrV-j4-jn0">
+                                        <rect key="frame" x="-36" y="-85" width="1422" height="248"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="248" id="17v-zO-DRf"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVy-Uu-qDi">
+                                        <rect key="frame" x="20" y="210" width="1326" height="604"/>
                                         <subviews>
                                             <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-j1-7C9" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="335" width="200" height="200"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="CommunityLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GAu-cA-F10">
-                                                        <frame key="frameInset" minX="19" minY="63" width="163" height="74"/>
+                                                        <rect key="frame" x="19" y="63" width="163" height="74"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                 </subviews>
@@ -51,9 +60,10 @@
                                                 </constraints>
                                             </view>
                                             <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgK-22-oOK" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <rect key="frame" x="593" y="68" width="200" height="200"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="MosaicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-O5-bCZ">
-                                                        <frame key="frameInset" minX="23" minY="58" width="155" height="84"/>
+                                                        <rect key="frame" x="23" y="58" width="155" height="84"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                 </subviews>
@@ -64,9 +74,10 @@
                                                 </constraints>
                                             </view>
                                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pD-5b-Aya" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <rect key="frame" x="1106" y="364" width="200" height="200"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" fixedFrame="YES" image="PublicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="In7-Ki-Kfi">
-                                                        <frame key="frameInset" minX="19" minY="47" width="163" height="107"/>
+                                                        <rect key="frame" x="19" y="47" width="163" height="107"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                 </subviews>
@@ -77,12 +88,14 @@
                                                 </constraints>
                                             </view>
                                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-RN-kSj" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <rect key="frame" x="563" y="404" width="200" height="200"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="OrangeBeer" translatesAutoresizingMaskIntoConstraints="NO" id="k25-FF-H59">
-                                                        <frame key="frameInset" minX="41" minY="23" width="103" height="146"/>
+                                                        <rect key="frame" x="41" y="23" width="103" height="146"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejK-wL-ntR">
+                                                        <rect key="frame" x="74" y="77" width="52" height="66"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="66" id="Wlh-Cj-LSZ"/>
                                                         </constraints>
@@ -101,12 +114,14 @@
                                                 </constraints>
                                             </view>
                                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q69-tU-vVZ" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="15" width="200" height="200"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="RedBeer" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-yH-4kf">
-                                                        <frame key="frameInset" minX="40" minY="24" width="103" height="146"/>
+                                                        <rect key="frame" x="40" y="24" width="103" height="146"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZq-xn-aSe">
+                                                        <rect key="frame" x="74" y="77" width="52" height="66"/>
                                                         <fontDescription key="fontDescription" name="Optimist-SemiBold" family="Optimist" pointSize="36"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -123,12 +138,14 @@
                                                 </constraints>
                                             </view>
                                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFC-Cl-opd" customClass="TileView" customModule="BeerMatchApp" customModuleProvider="target">
+                                                <rect key="frame" x="893" y="15" width="200" height="200"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="YellowBeer" translatesAutoresizingMaskIntoConstraints="NO" id="MhF-4G-63v">
-                                                        <frame key="frameInset" minX="41" minY="24" width="102" height="145"/>
+                                                        <rect key="frame" x="41" y="24" width="102" height="145"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVu-g5-sCv">
+                                                        <rect key="frame" x="74" y="77" width="52" height="66"/>
                                                         <fontDescription key="fontDescription" name="Optimist-SemiBold" family="Optimist" pointSize="36"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -164,6 +181,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5E-Ap-eoV">
+                                        <rect key="frame" x="548.5" y="865" width="269" height="59"/>
                                         <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="16"/>
                                         <inset key="contentEdgeInsets" minX="50" minY="20" maxX="50" maxY="20"/>
@@ -233,17 +251,22 @@
                         <viewControllerLayoutGuide type="bottom" id="9ex-DD-Hqf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uz0-DC-k7g">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="ama-tT-g48">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-YT-6RV">
+                                <rect key="frame" x="115" y="197.5" width="1136" height="629"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8T-6f-DCW">
+                                        <rect key="frame" x="463" y="0.0" width="210" height="219"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Logo_White" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-eU-Cgd"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Logo_White" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-eU-Cgd">
+                                                <rect key="frame" x="0.0" y="0.0" width="210" height="219"/>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="ya0-eU-Cgd" secondAttribute="bottom" id="5Xk-Cb-K8N"/>
@@ -255,13 +278,16 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xXB-zV-TsE">
+                                        <rect key="frame" x="7.5" y="269" width="1121" height="249"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW WELL DO YOU KNOW YOUR BEERS?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh5-qI-IEo">
+                                                <rect key="frame" x="58.5" y="0.0" width="1004.5" height="166.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="64"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uz-52-g8f">
+                                                <rect key="frame" x="0.0" y="186.5" width="1121" height="62.5"/>
                                                 <string key="text">Drag &amp; drop the beers onto their correct name to be entered into our raffle for an Amazon Echo, Lix 3D Pen, and other fun prizes!</string>
                                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,6 +296,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYf-Tr-U0k" customClass="RoundedButton" customModule="BeerMatchApp" customModuleProvider="target">
+                                        <rect key="frame" x="452" y="568" width="232" height="61"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="16"/>
                                         <inset key="contentEdgeInsets" minX="50" minY="20" maxX="50" maxY="20"/>
@@ -319,16 +346,20 @@
                         <viewControllerLayoutGuide type="bottom" id="vgK-wK-dao"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wRl-po-9hl">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999403953552" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-TZ-op0"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999403953552" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-TZ-op0">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="af4-hX-CWe">
+                                <rect key="frame" x="115" y="207.5" width="1136" height="610"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ltb-nh-SIS">
+                                        <rect key="frame" x="468" y="0.0" width="200" height="200"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Success" translatesAutoresizingMaskIntoConstraints="NO" id="y1Z-ie-enq">
-                                                <frame key="frameInset" minX="-7" minY="-7" width="214" height="214"/>
+                                                <rect key="frame" x="-7" y="-7" width="214" height="214"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                         </subviews>
@@ -338,13 +369,16 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-6N-I4j">
+                                        <rect key="frame" x="4" y="250" width="1128" height="249"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WOW! YOU REALLY KNOW YOUR BREWS." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCv-wh-lCe">
+                                                <rect key="frame" x="66" y="0.0" width="996.5" height="166.5"/>
                                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="64"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLx-X9-iXT">
+                                                <rect key="frame" x="0.0" y="186.5" width="1128" height="62.5"/>
                                                 <string key="text">Your taste buds are on-point! You guessed each beer correctly. Please show this screen to the event-person in front of you to collect a raffle ticket and a chance to win a lot of cool stuff!</string>
                                                 <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -353,6 +387,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKV-ka-bez">
+                                        <rect key="frame" x="498.5" y="549" width="139" height="61"/>
                                         <color key="backgroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Optimist-Bold" family="Optimist" pointSize="16"/>
                                         <inset key="contentEdgeInsets" minX="50" minY="20" maxX="50" maxY="20"/>
@@ -399,14 +434,15 @@
                         <viewControllerLayoutGuide type="bottom" id="Z2M-WJ-eMc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WN6-zR-plk">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.34999999999999998" contentMode="scaleAspectFill" image="pattern" translatesAutoresizingMaskIntoConstraints="NO" id="IzE-Ju-lhi">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Logo_White" translatesAutoresizingMaskIntoConstraints="NO" id="HHe-yL-DbS">
-                                <frame key="frameInset" minX="407" minY="275" width="210" height="219"/>
+                                <rect key="frame" x="578" y="403" width="210" height="219"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -425,7 +461,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpB-NJ-mCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="173"/>
+            <point key="canvasLocation" x="227" y="173"/>
         </scene>
     </scenes>
     <resources>

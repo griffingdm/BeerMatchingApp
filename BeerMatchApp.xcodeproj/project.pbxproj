@@ -21,6 +21,7 @@
 		6DBA31D51DB6A83B00BA061E /* BeerMatchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA31D41DB6A83B00BA061E /* BeerMatchAppTests.swift */; };
 		6DBA31E01DB6A83B00BA061E /* BeerMatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA31DF1DB6A83B00BA061E /* BeerMatchAppUITests.swift */; };
 		6DBA322E1DB6DA7900BA061E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBA322D1DB6DA7900BA061E /* Images.xcassets */; };
+		6DC44F2A1DC165C20096F19A /* Beer_Matching_Profile.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 6DC44F291DC165C20096F19A /* Beer_Matching_Profile.mobileprovision */; };
 		6DD3D4A21DB7C358004B3473 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A11DB7C358004B3473 /* RoundedButton.swift */; };
 		6DD3D4A41DBC2537004B3473 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A31DBC2537004B3473 /* ResultViewController.swift */; };
 		6DD3D4A61DBC5F18004B3473 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3D4A51DBC5F18004B3473 /* TileView.swift */; };
@@ -76,6 +77,7 @@
 		6DBA31DF1DB6A83B00BA061E /* BeerMatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerMatchAppUITests.swift; sourceTree = "<group>"; };
 		6DBA31E11DB6A83B00BA061E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DBA322D1DB6DA7900BA061E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6DC44F291DC165C20096F19A /* Beer_Matching_Profile.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; name = Beer_Matching_Profile.mobileprovision; path = ../Beer_Matching_Profile.mobileprovision; sourceTree = "<group>"; };
 		6DD3D4A11DB7C358004B3473 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = ../RoundedButton.swift; sourceTree = "<group>"; };
 		6DD3D4A31DBC2537004B3473 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = ../ResultViewController.swift; sourceTree = "<group>"; };
 		6DD3D4A51DBC5F18004B3473 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				6DBA31C81DB6A83B00BA061E /* LaunchScreen.storyboard */,
 				9212211D1DBFAFF300B11B4A /* LaunchViewController.swift */,
 				6DBA31CB1DB6A83B00BA061E /* Info.plist */,
+				6DC44F291DC165C20096F19A /* Beer_Matching_Profile.mobileprovision */,
 				6DBA322D1DB6DA7900BA061E /* Images.xcassets */,
 			);
 			path = BeerMatchApp;
@@ -283,7 +286,7 @@
 				TargetAttributes = {
 					6DBA31BB1DB6A83A00BA061E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T6FDPVN5SH;
+						DevelopmentTeam = 59BGYH7DCM;
 						ProvisioningStyle = Automatic;
 					};
 					6DBA31CF1DB6A83B00BA061E = {
@@ -337,6 +340,7 @@
 				6DE63FC81DBD3B27006F29AF /* Optimist_SBd.ttf in Resources */,
 				6DE63FC21DBD3B27006F29AF /* Optimist_Bd.ttf in Resources */,
 				6DE63FC41DBD3B27006F29AF /* Optimist_It.ttf in Resources */,
+				6DC44F2A1DC165C20096F19A /* Beer_Matching_Profile.mobileprovision in Resources */,
 				6DE63FCB1DBD3B27006F29AF /* Optimist_XLtIt.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,10 +533,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T6FDPVN5SH;
+				DEVELOPMENT_TEAM = 59BGYH7DCM;
 				INFOPLIST_FILE = BeerMatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GDM.BeerMatchApp-C1";
+				PRODUCT_BUNDLE_IDENTIFIER = GM.BeerMatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -544,10 +548,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T6FDPVN5SH;
+				DEVELOPMENT_TEAM = 59BGYH7DCM;
 				INFOPLIST_FILE = BeerMatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "GDM.BeerMatchApp-C1";
+				PRODUCT_BUNDLE_IDENTIFIER = GM.BeerMatchApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

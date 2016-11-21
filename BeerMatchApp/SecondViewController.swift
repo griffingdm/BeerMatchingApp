@@ -207,7 +207,6 @@ class SecondViewController: UIViewController {
         for thing in tiles {
             if tile.center == thing.center && tile.tag != thing.tag {
                 return thing
-                break
             }
         }
         return nil
